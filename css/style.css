@@ -1,0 +1,141 @@
+@font-face {
+   font-family: Jersey;
+   src: url(../fonts/Jersey20-Regular.ttf);
+}
+
+@font-face {
+   font-family: Poppins;
+   src: url(../fonts/Poppins-Light.ttf);
+}
+
+:root {
+  --cor-roxo-principal: #583BCE;
+  --cor-azul-escuro: #112A51;
+  --cor-preto: #191919;
+  --cor-amarelo: #EAA918;
+  --cor-roxo-claro: #7976FF;
+  --cor-azul-ciano: #0BBBEF;
+  --cor-cinza: #737171;
+  --cor-branco: #FAFAFA;
+}
+
+* {
+    margin: 0;
+    font-family: 'Jersey', sans-serif;
+}
+
+body {
+      background-color: var(--cor-azul-escuro);
+      color: var(--cor-branco);
+    }
+
+.container {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+.container img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.button {
+  background-color: var(--cor-azul-ciano);
+  padding: 10px 20px;
+  margin: 10px 0;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 33px;
+  cursor: pointer;
+  overflow: hidden;
+  height: 60px;
+  text-decoration: none;
+  box-shadow: 0 4px 0 #000;
+  image-rendering: pixelated; /* aqui o navegador força o estilo pixel */
+}
+
+.button p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Jersey', sans-serif;
+  font-size: 33px;
+  color: var(--cor-azul-escuro);
+
+}
+
+.button img {
+  width: 80px;
+  height: auto;
+  transform: translateY(20px); /* empurra o robô para baixo para ser cortado */
+}
+
+.membros-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.membros-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.membros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 15px;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+.membros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.membros img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  margin-bottom: 5px;
+}
+
+.membros p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    color: var(--cor-branco);
+    text-align: center;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    background-color: #191919;
+    padding: 10px 10px;
+    text-align: center;
+}
